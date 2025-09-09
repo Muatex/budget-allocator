@@ -4,7 +4,6 @@
 - [Notes](#-notes)  
 - [Usage](#-usage)  
 
-  
 ![Budget Allocator](https://lab.muatex.com/tools/budget-allocator/og-image.png)
 
 A lightweight budgeting tool that runs in your browser. Nothing leaves your machine with zero servers, accounts, or tracking.  
@@ -41,7 +40,19 @@ Tweak the look in `index.html` under `:root`:
 - Highlight behaviour  
 
 ### 💻 Local & static  
-Runs from a single HTML file. Double-click it on your computer, or drop it on any static host. Everything is processed on your own device.  
+Runs from a single HTML + JSON setup.  
+Because it uses `config.json`, it needs to be opened through a simple server, not just by double-clicking the file.  
+
+**Easy options:**  
+- **Quick local run:**  
+  - If you have Python, open the folder and type:  
+    `python -m http.server`  
+    Then go to [http://localhost:8000](http://localhost:8000).  
+- **Host online for free:**  
+  - Drop the folder onto services like **Vercel**, **Netlify**, **Firebase Hosting**, or **GitHub Pages**.  
+  - They’ll give you a link to use it anywhere.  
+
+No complicated setup is required — it’s just about serving the files instead of opening them directly.  
 
 ### 📅 Fits monthly rhythm  
 Made to be used once a month when your paycheck comes in. Especially useful if your priorities or income change — just edit `config.json` and refresh.  
@@ -49,12 +60,13 @@ Made to be used once a month when your paycheck comes in. Especially useful if y
 ---
 
 ## 🛠 How to Use
-1. Open `index.html` in your browser.  
-2. Enter your income.  
-3. Fixed amounts are deducted first.  
-4. The remainder is split by your percentages.  
-5. Click rows to copy amounts where you need them.  
-6. To customise:  
+1. Run the project locally or host it (see above).  
+2. Open `index.html` in your browser.  
+3. Enter your income.  
+4. Fixed amounts are deducted first.  
+5. The remainder is split by your percentages.  
+6. Click rows to copy amounts where you need them.  
+7. To customise:  
    - Open **`config.json`** in any text editor.  
    - Edit the values:  
      - **currency** → symbol shown (e.g. £, $, €).  
@@ -82,4 +94,4 @@ Please **do not** repackage, resell, or publish it as your own — the code and 
 
 ---
 
-© Muatex Media. All rights reserved.
+© Muatex Media. All rights reserved.  
