@@ -1,0 +1,18 @@
+{
+  "currency": "£",
+  "roundingIncrement": 5,
+  "fixed": [
+    { "name": "Phone Bill", "note": "Direct debit", "amount": 30 },
+    { "name": "Groceries", "note": "Supermarket", "amount": 60 }
+  ],
+  "percent": [
+    { "name": "Savings", "note": "Online bank", "rate": 0.20 },
+    { "name": "Charity", "note": "Local shelter/mosque", "rate": 0.10 },
+    { "name": "Family Support", "note": "Send to Mum", "rate": 0.10 },
+    { "name": "Emergency Fund", "note": "ATM deposit", "rate": 0.10 },
+    { "name": "Education", "note": "Books/courses", "rate": 0.10 },
+    { "name": "Community Fund", "note": "Local project", "rate": 0.05 },
+    { "name": "Pocket Money", "note": "Keep in wallet", "rate": 0.15 },
+    { "name": "Extras", "note": "Fun spend", "rate": 0.20 }
+  ]
+}
