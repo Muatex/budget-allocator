@@ -40,16 +40,23 @@ Tweak the look in `index.html` under `:root`:
 - Highlight behaviour  
 
 ### 💻 Local & static  
-Budget Allocator is a single HTML + JSON app that’s easy to run anywhere:  
-- **Run it locally:**  
-  - With Python installed, open the folder and type:  
-    `python -m http.server`  
-    Then visit [http://localhost:8000](http://localhost:8000).  
-- **Put it online:**  
-  - Upload the folder to services like **Vercel**, **Netlify**, **Firebase Hosting**, or **GitHub Pages**.  
-  - They’ll instantly give you a link to use it from any device.  
 
-No accounts, no databases, no backend — just a simple, portable budgeting tool that works from static files.  
+Budget Allocator is just a single HTML + JSON app, so it works anywhere.  
+
+**✅ Recommended: Host it online**  
+- Upload the folder to a free service like **Vercel**, **Netlify**, **Firebase Hosting**, or **GitHub Pages**.  
+- They’ll give you a link to share or bookmark.  
+- Works on any device (phone, laptop, tablet) as long as you have internet.  
+- Easiest option if you want to use it regularly without setting things up each time.  
+
+**💻 Alternative: Run it locally**  
+- If you prefer to keep it on your computer, you can run a quick one-line server.  
+- With Python installed, open the folder and type:  
+  `python -m http.server`  
+  Then visit [http://localhost:8000](http://localhost:8000).  
+- This works offline on your own machine. Each time you want to use it, you’ll need to start the server again.  
+
+Both methods give you the exact same tool — the only difference is whether you want it just for yourself (local) or easily available everywhere (hosted).  
 
 ### 📅 Fits monthly rhythm  
 Made to be used once a month when your paycheck comes in. Especially useful if your priorities or income change — just edit `config.json` and refresh.  
